@@ -138,7 +138,7 @@ const dragableList = () => {
                 />
                 <span className="product-name">{product.name}</span>
                 <span className="product-price">{product.price}</span>
-                <span className="product-type">{product.type}</span>
+                <span className="product-type"><span>{product.type}</span></span>
                 <span className="options-icon" onClick={() => handleMenu(index)}>
                   <SlOptionsVertical />
                 </span>

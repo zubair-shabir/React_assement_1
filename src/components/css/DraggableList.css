@@ -88,6 +88,12 @@
   margin-right: 8px;
   flex-grow: 1;
 }
+.product-type span{
+  border: 0.2px solid #7E7E7E;
+  border-radius: 4px;
+  padding: 4px 6px;
+  background-color: #DBFFCE;
+}
 
 .options-icon {
   cursor: pointer;
