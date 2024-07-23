@@ -17,21 +17,12 @@ function otp() {
     // console.log(value);
     if (/^[0-9]$/.test(value)) {
       const newOtp = [...otp];
-      console.log(e.key);
-
-      if (e.key === "Backspace") {
-       
-        handleBackspace(e, index);
-        return;
-      }
-
-      console.log(newOtp);
 
       if (newOtp[index] === "") {
         newOtp[index] = value;
       } else if (index < 3 && newOtp[index] !== "") {
         newOtp[index + 1] = e.key;
-        inputRefs.current[index + 1].focus();
+        inputRefs.current[index +1].focus();
       }
 
       setOtp(newOtp);
