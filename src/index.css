@@ -2,3 +2,9 @@
     margin: 0;
     padding: 0;
 }
+
+.icon{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+}

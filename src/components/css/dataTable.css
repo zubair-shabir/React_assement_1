@@ -77,21 +77,21 @@
   padding: 8px;
   text-align: left;
 }
-.dataTable td{
-    border-top: none;
-    border-bottom: none;
-    border-left:  1px solid #ddd;
-    border-right:  1px solid #ddd;
-    padding: 8px;
-    text-align: left;
+.dataTable td {
+  border-top: none;
+  border-bottom: none;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
 }
 tr:last-child {
-    border-bottom: 1px solid #ddd;
-  }
+  border-bottom: 1px solid #ddd;
+}
 .dataTable th {
   background-color: #f2f2f2;
 }
-.dataTable tr .titleText{
+.dataTable tr .titleText {
   vertical-align: top;
 }
 .pagination {
@@ -117,4 +117,18 @@ tr:last-child {
   background-color: #007bff;
   color: white;
   border-color: #007bff;
+}
+
+.status {
+  border-radius: 4px;
+  padding: 5px 8px;
+  font-size: 14px;
+}
+.Published {
+  border: 1px solid #4ed04b;
+  background: #deffde;
+}
+.Unpublished {
+  border: 1px solid #a4a4a4;
+  background: #f3f3f3;
 }

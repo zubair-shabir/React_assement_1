@@ -1,4 +1,5 @@
 import React, { useState, useRef } from "react";
+import './css/otp.css'
 
 function otp() {
   const [otp, setOtp] = useState(["", "", "", ""]);
@@ -63,7 +64,14 @@ function otp() {
     }
   };
   return (
-    <form onSubmit={handleSubmit}>
+    <>
+    <div className="mainOtpContainer">
+      <h1 className="headerText">Chai aur Code</h1>
+      <div className="otpContainer">
+        <h2>Mobile Phone Verification</h2>
+        <p>Enter the 4-digit verification code that was sent to your phone number.</p>
+        <div>
+        <form onSubmit={handleSubmit}>
       <div className="otp-inputs">
         {otp.map((value, index) => (
           <input
@@ -79,9 +87,14 @@ function otp() {
         ))}
       </div>
       <button type="submit" className={`submit-button submit-button-${color}`}>
-        Submit
+      Verify Account
       </button>
     </form>
+    <p className="resendButton">Didn’t receive code? <span>Resend </span></p>
+        </div>
+      </div>
+    </div>
+    </>
   );
 }
 

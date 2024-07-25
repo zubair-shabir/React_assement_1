@@ -3,19 +3,19 @@ import './css/dataTable.css'; // Create and use this CSS file for styling
 
 const DataTable = () => {
   const initialData = [
-    { title: "SQL Basics To Advanced Mastery Course", startDate: "2023-01-01", endDate: "2023-03-01", price: "100", expiry: "2024-01-01", status: "Active" },
-    { title: "30 Days Of Javascript Challenge", startDate: "2023-02-01", endDate: "2023-04-01", price: "200", expiry: "2024-02-01", status: "Inactive" },
-    { title: "Interview Preparation With Javascript 2.0", startDate: "2023-03-01", endDate: "2023-05-01", price: "300", expiry: "2024-03-01", status: "Active" },
-    { title: "Batch 4", startDate: "2023-03-01", endDate: "2023-05-01", price: "300", expiry: "2024-03-01", status: "Active" },
-    { title: "Batch 5", startDate: "2023-03-01", endDate: "2023-05-01", price: "300", expiry: "2024-03-01", status: "Active" },
-    { title: "Batch 6", startDate: "2023-03-01", endDate: "2023-05-01", price: "300", expiry: "2024-03-01", status: "Active" },
-    { title: "Batch 7", startDate: "2023-03-01", endDate: "2023-05-01", price: "300", expiry: "2024-03-01", status: "Active" },
-    { title: "Batch 8", startDate: "2023-03-01", endDate: "2023-05-01", price: "300", expiry: "2024-03-01", status: "Active" },
-    { title: "Batch 9", startDate: "2023-03-01", endDate: "2023-05-01", price: "300", expiry: "2024-03-01", status: "Active" },
-    { title: "Batch 10", startDate: "2023-03-01", endDate: "2023-05-01", price: "300", expiry: "2024-03-01", status: "Active" },
-    { title: "Batch 11", startDate: "2023-03-01", endDate: "2023-05-01", price: "300", expiry: "2024-03-01", status: "Active" },
-    { title: "Batch 12", startDate: "2023-03-01", endDate: "2023-05-01", price: "300", expiry: "2024-03-01", status: "Active" },
-    { title: "Batch 13", startDate: "2023-03-01", endDate: "2023-05-01", price: "300", expiry: "2024-03-01", status: "Active" },
+    { title: "SQL Basics To Advanced Mastery Course", startDate: "2023-01-01", endDate: "2023-03-01", price: "100", expiry: "180", status: "Published" },
+    { title: "30 Days Of Javascript Challenge", startDate: "2023-02-01", endDate: "2023-04-01", price: "200", expiry: "365", status: "Unpublished" },
+    { title: "Interview Preparation With Javascript 2.0", startDate: "2023-03-01", endDate: "2023-05-01", price: "300", expiry: "240", status: "Published" },
+    { title: "Batch 4", startDate: "2023-03-01", endDate: "2023-05-01", price: "300", expiry: "33", status: "Published" },
+    { title: "Batch 5", startDate: "2023-03-01", endDate: "2023-05-01", price: "0", expiry: "90", status: "Published" },
+    { title: "Batch 6", startDate: "2023-03-01", endDate: "2023-05-01", price: "300", expiry: "90", status: "Published" },
+    { title: "Batch 7", startDate: "2023-03-01", endDate: "2023-05-01", price: "0", expiry: "90", status: "Published" },
+    { title: "Batch 8", startDate: "2023-03-01", endDate: "2023-05-01", price: "0", expiry: "90", status: "Published" },
+    { title: "Batch 9", startDate: "2023-03-01", endDate: "2023-05-01", price: "199", expiry: "90", status: "Published" },
+    { title: "Batch 10", startDate: "2023-03-01", endDate: "2023-05-01", price: "300", expiry: "90", status: "Published" },
+    { title: "Batch 11", startDate: "2023-03-01", endDate: "2023-05-01", price: "0", expiry: "90", status: "Published" },
+    { title: "Batch 12", startDate: "2023-03-01", endDate: "2023-05-01", price: "199", expiry: "90", status: "Unpublished" },
+    { title: "Batch 13", startDate: "2023-03-01", endDate: "2023-05-01", price: "299", expiry: "90", status: "Unpublished" },
     // Add more batches as needed
   ];
 
@@ -85,9 +85,10 @@ const DataTable = () => {
                 <img src="./public/dragableAssets/image_3.png" alt="" srcset="" /> <span className='titleText'> {batch.title}</span></td>
               <td>{batch.startDate}</td>
               <td>{batch.endDate}</td>
-              <td>₹{batch.price}</td>
-              <td>{batch.expiry}</td>
-              <td>{batch.status}</td>
+              <td>₹ &nbsp;{batch.price}</td>
+              <td>{batch.expiry} &nbsp; days</td>
+              <td > <span className={`status ${batch.status }`}>{batch.status}</span></td>
+
             </tr>
           ))}
         </tbody>
