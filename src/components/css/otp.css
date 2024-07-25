@@ -5,7 +5,6 @@
   background: #3f72af;
   text-align: center;
   font-family: inter;
-  letter-spacing: -0.05em;
   height: 100vh;
 }
 .headerText {
@@ -15,15 +14,18 @@
   line-height: 96.82px;
   text-align: center;
   color: #fff;
+  padding-top: 40px;
+  padding-bottom: 80px;
 }
 .otpContainer {
   box-shadow: 2px 2px 3px 0px #00000040;
   width: 756px;
   height: 514px;
   border-radius: 18px;
-  background: #fff;
+  background: #f9f7f7;
   margin: 0 auto;
   padding: 30px;
+  align-content: center;
 }
 
 .otpContainer > h2 {
@@ -31,9 +33,10 @@
   font-weight: 700;
   line-height: 52.08px;
   letter-spacing: -0.05em;
+  padding-bottom: 14px;
 }
 .otpContainer > p {
-  font-family: DM Sans;
+  font-family: inter;
   font-size: 25px;
   font-weight: 400;
   line-height: 32.55px;
@@ -73,6 +76,7 @@
 }
 
 .submit-button {
+  width: 400px;
   padding: 10px;
   font-size: 18px;
   border: none;
