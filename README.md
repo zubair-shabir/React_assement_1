@@ -4,7 +4,7 @@
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/zubair-shabir/React_assement_1.git
 ```
 
 Go to the project directory

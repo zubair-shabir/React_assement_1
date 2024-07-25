@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './css/dataTable.css'; // Create and use this CSS file for styling
+import './css/dataTable.css'; 
 
 const DataTable = () => {
   const initialData = [

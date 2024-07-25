@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./css/DraggableList.css"; // Make sure to create this CSS file
+import "./css/DraggableList.css"; 
 
 import { SlOptionsVertical } from "react-icons/sl";
 import { MdOutlineDragIndicator } from "react-icons/md";
